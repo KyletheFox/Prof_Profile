@@ -1,0 +1,260 @@
+/* Document Wide */
+body, html, .container-fluid{
+	height:100%;
+	font-family: 'Rosario', sans-serif;
+	background-color: #000; 
+}
+
+.bank_app {
+	background-color: #FFF;
+	height:100%;
+}
+
+.bank_app_container {
+	margin-top: 0px;
+}
+
+/* NavBar */
+.navbar {
+	background-color: #000; 
+	border: 0px;
+	margin-bottom: 0px;
+	height: 3em;
+}
+
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-size: 2em;	
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-toggle {
+	height: 50px;
+	margin: 0px;
+	border: 0px;
+}
+
+.navbar-fixed-top .navbar-collapse {
+	max-height: 700px;
+	height: 700px;
+	border: 0px;
+	padding: 0px;
+}
+
+.nav .navbar-nav {
+	margin: 0px -15px;
+}
+
+.navbar-text {
+	margin: 0px 0px 0px 0px;
+	padding: 15px 15px;
+	background-color: #DDD;
+}
+
+.navbar-default .navbar-text>li>a:hover {
+	color:#FFF;
+	background-color: #000;
+}
+
+.navbar-default .navbar-text>li>a {
+	padding: 0px;
+	font-size: 20px;
+	color: #000;
+}
+
+
+.navbar-link-container {
+	width: 100%;
+	height: 100%;
+}
+
+#navbar-link {
+	color: #000;
+	height: 100%;
+	text-align: center;
+	padding: 0px;
+	padding-top: 0.5em;
+	font-size: 2.5em;
+}
+
+.button-push {
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+#hide {
+	width: 0px;
+	height: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Content Sections */
+
+.center-window {
+	height: 100%;
+	padding-top: 10%;
+}
+
+.middle-section {
+	display: block;
+	height: 100%;
+}
+
+.title {
+	color: #fff;
+}
+
+.title h1 {
+	color: #fff;
+	opacity: 0.85;
+	font-size: 4.25em;
+	text-align: center;
+	text-shadow: 0 0px #000, 0 2px #000, 2px 0 #000, 0 0px #000; /* Look here for title effect */
+	margin-top: 0px;
+}
+
+.title h2 {
+	margin-top: 10px;
+	color: #FFF;
+	opacity: 0.85;
+	font-size: 2.5em;
+	text-align: center;
+	text-shadow: 0px 0 #000, 0 2px #000, 2px 0 #000, 0 0px #000; /* Look here for title effect */
+}
+
+#line {
+	opacity: 0.85;
+  	width: 100%; 
+  	box-shadow: 5px 5px 10px #000;
+  	margin-top: 0px;
+  	margin-bottom: 15px;
+  	border-width: 10px;
+  	border-color: #000;
+  	
+}
+
+.input-group-btn>.btn {
+	margin: 0px 0px 0px 20px;
+	width: 60px;
+	padding-top: 7px;
+	padding-bottom: 9px; 
+}
+
+.btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	opacity: 0.85;
+	color: #FFF;
+	border: 0px;
+	background-color: #000;
+	box-shadow: 10px 10px 15px #000;
+	width: 15em;
+ }
+
+ .bank_app_input {
+ 	box-shadow: 15px 13px 21px #000;
+ }
+
+.button-line {
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+}
+
+#bg1 {
+	padding-top: 50px;
+	background-image: url("steel.jpg");
+	background-attachment: fixed;
+    background-position: top center;
+}
+
+video {
+	position: fixed; 
+	z-index: 0; 
+	width: 1980px; 
+	height: 1120px;
+}
+
+
+#bgvideo {
+	position: fixed; 
+	z-index: 0; 
+	width: 1980px; 
+	height: 1120px;
+}
+
+@media only screen and (max-width: 1200px) { 
+	video {
+		height: 760px;
+		width: 1200px;
+	}
+	#bgvideo {
+		height: 760px;
+		width: 1200px;
+	}
+}
+
+@media only screen and (max-width: 600px) { 
+	video {
+		margin-left: -300px;
+	}
+	#bgvideo {
+		margin-left: -300px;
+	}
+}
+
+/* For Desktop/Tablets */
+@media only screen and (min-width: 50em) { 
+
+    .center-window {
+        padding-top: 10%;
+    }
+
+	.title h2 {
+		font-size: 5.75em;
+	}
+
+	.title h1 {
+		font-size: 8.75em;
+	}
+
+	#hide {
+		height: 65px;
+		width: 20%;
+	}
+
+}
+
+/* For Mobile Landscapes */
+@media only screen and (max-height: 525px) { 
+
+	.bank_app {
+		padding-top: 0px;
+		height: 120%;
+	}
+
+	.btn {
+		width: 12em;
+	}
+
+	.center-window {
+		padding-top: 6%;
+	}
+}
+
+/* For Bank App Button in Mobile */
+@media only screen and (max-width: 50em) { 
+
+	.navbar-text {
+		padding-left: 10%;
+		margin-left: 0px;
+		opacity: 0.85;
+	}
+}
